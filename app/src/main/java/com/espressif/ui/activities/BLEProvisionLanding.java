@@ -488,12 +488,13 @@ public class BLEProvisionLanding extends ManualProvBaseActivity {
 
                 @Override
                 public void onFailure(Exception e) {
+                    Log.w(TAG, "Failed to check conn-status.");
                 }
             });
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException exception) {
-
+                Log.e(TAG, "Exception while sleeping in checkConnStatus(), which checks conn-status.");
             }
         }
     }

@@ -238,13 +238,13 @@ public class WiFiScanActivity extends AppCompatActivity {
 
                             String networkName = etSsid.getText().toString();
 
-                            if (TextUtils.isEmpty(networkName)) {
-                                etSsid.setError(getString(R.string.error_ssid_empty));
-
-                            } else {
+//                            if (TextUtils.isEmpty(networkName)) {
+//                                etSsid.setError(getString(R.string.error_ssid_empty));
+//
+//                            } else {
                                 dialog.dismiss();
                                 goForProvisioning(networkName, password);
-                            }
+//                            }
 
                         } else {
 
